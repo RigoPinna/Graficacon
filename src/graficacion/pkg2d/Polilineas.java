@@ -16,7 +16,7 @@ public class Polilineas extends javax.swing.JFrame {
 
     String[] numeros ={"1","2","3","4","5","6","7","8","9","10"};
     String[] vectorP = {"p1","p2","p3","p4","p5","p6","p7"};
-    int[] vectorX = {3,1,3,5,7,10,7};
+    int[] vectorX = {3,1,3,5,7,9,7};
     int[] vectorY = {1,5,5,1,5,5,1};
     int[] pixelX = new int[7];int[] pixelY = new int[7];
     int[] pixeldX = new int[7];int[] pixeldY = new int[7];
@@ -97,12 +97,6 @@ public class Polilineas extends javax.swing.JFrame {
             columna[4] = vectorDY[i];
             modeloT.addRow(columna);
         }
-         columna[0] = "p'1";
-            columna[1] = 0;
-            columna[2] = 2;
-            columna[3] = -6;
-            columna[4] = 0;
-            modeloT.addRow(columna);
     }
     public void TablaCartPixeles(){
         DefaultTableModel modeloT = new DefaultTableModel();

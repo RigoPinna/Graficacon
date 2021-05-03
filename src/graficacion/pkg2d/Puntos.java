@@ -14,7 +14,7 @@ import javax.swing.table.DefaultTableModel;
 
 public class Puntos extends javax.swing.JFrame {
         String[] vectorP = {"p1","p2","p3","p4","p5","p6","p7"};
-        int[] vectorX = {3,1,3,5,7,10,7};
+        int[] vectorX = {3,1,3,5,7,9,7};
         int[] vectorY = {1,5,5,1,5,5,1};
         String[] numeros ={"1","2","3","4","5","6","7","8","9","10"};
         int vectorDX[]= new int[7];
@@ -243,9 +243,11 @@ public class Puntos extends javax.swing.JFrame {
         Graphics2D g2 = (Graphics2D) g;
         BasicStroke stroke = new BasicStroke(2.5f, BasicStroke.CAP_ROUND,BasicStroke.JOIN_ROUND,5, dashes, 0);
         g2.setStroke(stroke);
-        String dxy []  = {"dx1", "dy2", "dy3", "dy4", "dy5"};
-        int cX [] = {105, 160, 225, 225,105};
-        int cY [] = {325, 290, 385, 430,525};
+        String dxy []  = {"dx1", "dx2", "dx3", "dx4", "dx5","dx6", "dx7"};
+        //int cX [] = {105, 160, 225, 225,105};
+        //int cY [] = {325, 290, 385, 430,525};
+        int cX [] = {105, 115, 120, 213,310,450,430};
+        int cY [] = {525, 400,290, 400,400,290,400};
         g2.setColor(Color.BLACK);
         g2.setFont( new Font( "Monospaced", Font.BOLD, 18 ));
         for (int j=0; j<dxy.length; j++){
